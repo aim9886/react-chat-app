@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+  background-color: #13131d !important;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  overflow: hidden ;
+  font-family: 'Poppins', sans-serif;
+}
+
+.signInContainer{
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 50px;
+  padding-top: 40px;
+  margin-top: 50px;
+  background-color: #181824;
+  border-radius: 20px;
+}
+
+.main-container{
+  max-width: 600px !important;
+  height: 90vh !important;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+img {
+  border-radius: 50%;
+  height: 24px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-left: 12px;
+  margin-right: 12px;
+  overflow-wrap: break-word;
+}
+
+.TopBar{
+  display: flex;
+  background-color: #232330;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 8px;
+  justify-content: space-between;  
+  align-items: center;
+
+}
+
+.UserDetails{
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.UserName{
   color: white;
+  font-weight: 500;
+  font-size: 15px;
+  margin-left: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.msg {
+  display: flex;
+  padding: 2px 12px 2px 12px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-shadow: -2px 2px 20px rgb(29, 28, 28);
+  align-items: center;
+  max-width: 70%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.sent {
+  width:fit-content;
+  background-color: #075E54;
+  color: white;
+  flex-direction: row-reverse;
+  padding: 0px 6px 0px 2px;
+  border-radius: 8px 0px 8px 8px;
+  text-align: end;
+  float: right;
+}
+
+.received {  
+  width:fit-content;
+  background-color: #25252e;
+  color: aliceblue;
+  padding: 1px 4px 1px 6px;
+  border-radius: 0px 12px 12px 12px;
+  float: left;
+}
+
+.sendMsg {
+  display: flex;
+  bottom: 0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  align-items: center;
+  background-color: #232330;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.msgs {
+  height: 68vh;
+  width: 600px;
+  background-color: #181824;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./Img/background.png);
+  display: flex;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  flex-direction: column;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+}
+
+.msgs::-webkit-scrollbar {
+  display: none;
+}
+
+
+@media (max-width: 775px) {
+  .msgs{    
+    width: 600px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 500px) {
+  .msgs{
+    max-width: 400px;
   }
 }
