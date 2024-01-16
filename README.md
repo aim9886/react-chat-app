@@ -1,3 +1,10 @@
+# FireChat
+This is a Chat App using React Js and Firebase.
+
+
+<img align="center" alt="" src="./src/Img/firebase1.png">
+<img align="center" alt="" src="./src/Img/firebase2.png">
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
