@@ -1,6 +1,6 @@
 import React from 'react'
-import { Avatar } from '@material-ui/core'
-import Badge from '@material-ui/core/Badge'
+import { Avatar } from '@mui/material'
+import Badge from '@mui/material/Badge'
 import SignOut from './SignOut'
 import { auth } from '../firebase'
 import 'firebase/compat/firestore';

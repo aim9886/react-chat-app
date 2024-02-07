@@ -3,7 +3,7 @@ import { db, auth } from '../firebase'
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
-import { Input, Button } from '@material-ui/core'
+import { Input, Button } from '@mui/material'
 function SendMessage({ scroll }) {
     const [msg, setMsg] = useState('')
 

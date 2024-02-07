@@ -1,6 +1,6 @@
 import React from 'react'
 import { auth } from '../firebase'
-import {Button} from '@material-ui/core'
+import {Button} from '@mui/material'
 
 function SignOut() {
   return (

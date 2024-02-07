@@ -3,7 +3,7 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
 import { auth } from '../firebase.js'
-import { Button } from '@material-ui/core'
+import { Button } from '@mui/material'
 function SignIn() {
   function signInWithGoogle() {
     const provider = new firebase.auth.GoogleAuthProvider
