@@ -6,7 +6,7 @@ import { auth } from '../firebase'
 import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
 function TopBar() {
-  const { uid, photoURL, displayName } = auth.currentUser
+  const { photoURL, displayName } = auth.currentUser
   return (
     <div className='TopBar'>
       <div className='UserDetails'>

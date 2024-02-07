@@ -3,10 +3,10 @@ import { db, auth } from '../firebase'
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
-import { Input, Button } from '@mui/material'
+import { Button } from '@mui/material'
 function SendMessage({ scroll }) {
     const [msg, setMsg] = useState('')
-
+    
     async function sendMessage(e) {
         e.preventDefault()
         const { uid, photoURL } = auth.currentUser
